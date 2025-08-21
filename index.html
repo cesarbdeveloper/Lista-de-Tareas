@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Tareas</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>Mi Lista de Tareas</h1>
+        <form id="task-form">
+            <input type="text" id="task-input" placeholder="Añade una nueva tarea...">
+            <button type="submit">Agregar</button>
+        </form>
+        <ul id="task-list">
+            </ul>
+    </div>
+    <script>
+        const form = document.getElementById('task-form');
+        const input = document.getElementById('task-input');
+        const list = document.getElementById('task-list');
+
+        form.addEventListener('submit', function(e) {
+            e.preventDefault();
+            const taskText = input.value.trim();
+
+            if (taskText !== '') {
+                const listItem = document.createElement('li');
+                listItem.innerHTML = `
+                    <span>${taskText}</span>
+                    <button class="delete-btn">Eliminar</button>
+                `;
+                list.appendChild(listItem);
+                input.value = '';
+
+                listItem.querySelector('span').addEventListener('click', function() {
+                    listItem.classList.toggle('completed');
+                });
+
+                listItem.querySelector('.delete-btn').addEventListener('click', function() {
+                    list.removeChild(listItem);
+                });
+            }
+        });
+    </script>
+
+    <footer>
+        <p>Desarrollada por:
+            <a href="https://github.com/cesarbdeveloper">César Barazarte</a>
+        </p>
+    </footer>
+</body>
+</html>
