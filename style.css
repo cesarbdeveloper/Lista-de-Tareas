@@ -106,5 +106,44 @@ footer {
     text-align: center;
     padding: 1rem;
     margin-top: 0.5rem;
-    border-top: 5px 
+    border-top: 5px;
+}
+
+/* Media Query para pantallas pequeñas */
+@media (max-width: 600px) {
+    body {
+        height: auto; /* Permite que el contenido determine la altura */
+        align-items: flex-start; /* Alinea el contenido al principio de la pantalla */
+        padding: 20px; /* Añade espacio alrededor del cuerpo */
+    }
+
+    .container {
+        width: 100%;
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 1.8em; /* Reduce el tamaño del título */
+    }
+
+    #task-form {
+        flex-direction: column; /* Apila el input y el botón verticalmente */
+    }
+
+    #task-form button {
+        margin-left: 0;
+        margin-top: 10px; /* Añade espacio entre el input y el botón */
+        width: 100%;
+    }
+
+    #task-list li {
+        flex-direction: column; /* Apila los elementos de la lista verticalmente */
+        align-items: flex-start;
+        padding: 10px;
+    }
+
+    .delete-btn {
+        margin-top: 10px; /* Añade espacio entre la tarea y el botón de eliminar */
+        width: 100%;
+    }
 }
