@@ -10,7 +10,7 @@ Eliminar Tareas: Usa el botón "Eliminar" para borrar tareas de la lista.
 
 Diseño Responsivo: Se adapta a diferentes tamaños de pantalla, desde dispositivos móviles hasta escritorios.
 
-Código Sencillo: Todo el código (HTML, CSS, JS) está en un solo archivo para facilitar la visualización y el aprendizaje.
+Código Sencillo: Todo el código (HTML y CSS) está en un solo archivo para facilitar la visualización y el aprendizaje.
 
 Tecnologías Utilizadas
 HTML5: Para la estructura de la aplicación.
