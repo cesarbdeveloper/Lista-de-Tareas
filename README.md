@@ -1,5 +1,5 @@
 Lista de Tareas Simple
-Este es un proyecto de una lista de tareas (To-Do List) simple y ligera, construida con HTML, CSS y JavaScript. Fue diseñada para ser una aplicación de una sola página, ideal para aprender los fundamentos del desarrollo web.
+Este es un proyecto de una lista de tareas (To-Do List) simple y ligera, construida con HTML y CSS. Fue diseñada para ser una aplicación de una sola página, ideal para aprender los fundamentos del desarrollo web.
 
 Características
 Añadir Tareas: Agrega nuevas tareas a la lista de forma rápida.
